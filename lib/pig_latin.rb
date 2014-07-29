@@ -12,8 +12,8 @@ module PigLatin
 		elsif consonants.include?(word[0]) && consonants.include?(word[1]) 
 			word[2..-1] << ("#{word[0..1]}") + "ay"
 		elsif consonants.include?(word[0]) && vowels.include?(word[1]) 
-			word[1..-1] << ("#{word[1]}") + "ay"
-		else "error!"
+			word[1..-1] << ("#{word[0]}") + "ay"
+			 else "error!"
 	  end
 	end
 end
